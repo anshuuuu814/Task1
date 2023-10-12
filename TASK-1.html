@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Page </title>
+<style type="text/css">
+header{
+width: 100%;
+height: 100vh; 
+background: url('/home/anusha/PSHPNG/cf1139688a03153f787fce5dd7f07774.jpg');
+background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color:rgb(228, 253, 5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: serif;
+}
+.logo{
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+.menu a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    font-family: sans-serif;
+
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(46, 44, 42);
+    transition: 0.4s linear;
+
+}
+.menu a:hover:before{
+    width: 60%;
+}
+.Signin a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: palevioletred;
+    border-radius: 8px;
+    transition: 0.4s;
+
+}
+.Signin a:hover{
+    background: transparent;
+    border:1px solid pink;
+}
+.Signup a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: palevioletred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.Signup a:hover{
+    background: transparent;
+    border: 1px solid pink;
+}
+.h-txt{
+    font-size: 18px;
+    font-family: serif;
+    max-width: 650px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-110%);
+}
+.h-txt h1{
+  font-size: 3.5em;
+  font-family:serif;
+  color:rgb(15, 15, 15);
+
+}
+.h-txt h3{
+    position:static;
+    color: rgb(243, 237, 237);
+}
+.h-txt a{
+    text-decoration: none;
+    background: rgb(243, 62, 6);
+    color: white;
+    position: absolute;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.h-txt a:hover{
+    background: transparent;
+    border: 1px solid orangered;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            Shop-ZONE
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="Signin">
+            <a href="#">Sign in</a>
+
+        </div>
+        <div class="Signup">
+            <a href="#">Sign up</a>
+        </div>
+    </nav>
+    <section class="h-txt">
+        <h1>Super Sale</h1>
+        <h3>Grab your styles,hurry up!</h3>
+        <br>
+        <a href="#">Explore now</a>
+    </section>
+</header>
+</body>
+</html>
